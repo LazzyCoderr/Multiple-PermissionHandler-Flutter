@@ -19,3 +19,10 @@ doc/api/
 *.js_
 *.js.deps
 *.js.map
+/.flutter-plugins
+/.flutter-plugins-dependencies
+/.metadata
+/.packages
+/permission_group_flutter.iml
+/pubspec.lock
+/.idea/
