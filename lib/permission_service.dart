@@ -44,13 +44,7 @@ class PermissionServiceState extends State<PermissionService> {
                 PermissionHandler().requestStoragePermission().then((value) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
-                      content: Text(
-                        value == 0
-                            ? 'Storage permission granted...!'
-                            : value == 1
-                                ? 'Storage permission denied...!'
-                                : 'Storage permission permanently denied',
-                      ),
+                      content: Text(value ? 'Storage permission granted...!' : 'Storage permission denied...!'),
                     ),
                   );
                 });
@@ -62,13 +56,7 @@ class PermissionServiceState extends State<PermissionService> {
                 PermissionHandler().requestCameraPermission().then((value) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
-                      content: Text(
-                        value == 0
-                            ? 'Camera permission granted...!'
-                            : value == 1
-                                ? 'Camera permission denied...!'
-                                : 'Camera permission permanently denied',
-                      ),
+                      content: Text(value ? 'Camera permission granted...!' : 'Camera permission denied...!'),
                     ),
                   );
                 });
@@ -80,13 +68,7 @@ class PermissionServiceState extends State<PermissionService> {
                 PermissionHandler().requestSMSPermission().then((value) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
-                      content: Text(
-                        value == 0
-                            ? 'Sms permission granted...!'
-                            : value == 1
-                                ? 'Sms permission denied...!'
-                                : 'Sms permission permanently denied',
-                      ),
+                      content: Text(value ? 'Sms permission granted...!' : 'Sms permission denied...!'),
                     ),
                   );
                 });
@@ -98,13 +80,7 @@ class PermissionServiceState extends State<PermissionService> {
                 PermissionHandler().requestCalenderPermission().then((value) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
-                      content: Text(
-                        value == 0
-                            ? 'Calender permission granted...!'
-                            : value == 1
-                                ? 'Calender permission denied...!'
-                                : 'Calender permission permanently denied',
-                      ),
+                      content: Text(value ? 'Calender permission granted...!' : 'Calender permission denied...!'),
                     ),
                   );
                 });
